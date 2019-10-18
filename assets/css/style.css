@@ -1,79 +1,108 @@
-.column{ width:100% }
-
-@media screen and (min-width: 1024px) {
-	/* For Desktop */
-	.column { width: 33.333% }
-}
-body{
-    background-color: olive;
-}
-* {
-  box-sizing: border-box;
-}
-
 #container {
-  display: flex;
-  flex-wrap: wrap;
-  
+
+    width: 100%
+    
+  }
+body{
+  background-color: blanchedalmond
+}
+.hero-image{
+  background-image: url(/Assessment/assets/images/Audio.jpg);
+  background-size: cover;
+  width: 50%;
+  margin-left: auto; 
+  margin-right: auto; 
+}
+.centered {display: block; margin-left: auto; margin-right: auto; width: 20%; background-color: burlywood;}
+
+.centerHeader {
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 50%;
+  height: 100px;
+  text-align: center;
+  color: floralwhite;
 }
 
-section
-{
-    background-color: burlywood;
-}
-ul {
+#mainMenu{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;
-    background-color:  burlywood;
-  }
-  
-  li a {
-    display: block;
+    overflow: hidden;
+    background-color: burlywood;
+    
+}
+
+#mainMenu li{
+  float: left; 
+  overflow: hidden;
+}
+
+#mainMenu a, .dropbtn{
+    display: inline-block;
     color: #000;
-    padding: 8px 16px;
+    padding: 14px 16px;
     text-decoration: none;
-  }
-  textarea {
-    background-color: khaki;
-    size: 200px
-  }
-  
-  /* Change the link color on hover */
-  li a:hover {
-    background-color: #555;
-    color: white;
-  }
-.center {display: block; margin-left: auto; margin-right: auto; width: 50%; background-color: burlywood}
-.centered {display: block; margin-left: auto; margin-right: auto; width: 20%;}
+    text-align: center;
 
-th, td {
-  text-align: left;
-  padding: 10px;
-  
 }
-tr:nth-child(even) {
-  background-color: #000;
+
+#mainMenu a:hover, .dropdown:hover .dropbtn{
+  background-color: #555;
   color: white;
+}
+li.dropdown{
+  display: inline-block;
+}
 
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
-tr:nth-child(odd) {
-  background-color: white;
+
+.dropdown-content a{
   color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
-.addBtn {
-  padding: 5px;
-  width: 10%;
-  background: #d9d9d9;
-  color: gray;
-  float: left;
+
+.dropdown-content a:hover .dropbtn {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+ }
+
+
+#FeedbackInput{
+  height: 400px;
+  width: 200px;
+}
+.Comment-Section{
+  background-color: bisque;
+  width: 250px;
+  bottom: 0;
+}
+table, td{
+  width: 50%;
+  border: 2px solid black;
+}
+tr{ 
   text-align: center;
-  font-size: 10px;
-  cursor: pointer;
-  transition: 0.3s;
-  border-radius: 0;
+  height: 100px;
+  border: 2px solid black;
 }
-.addBtn:hover {
-  background-color: #bbb;
+th{
+  border: 2px solid gray;
+}
+td, img{
+  width: 250px;
+  height: 200px;
 }
