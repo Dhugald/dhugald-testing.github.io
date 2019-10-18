@@ -4,10 +4,10 @@
     
   }
 body{
-  background-color: blanchedalmond
+  background-color: navajowhite;
 }
 .hero-image{
-  background-image: url(/Assessment/assets/images/Audio.jpg);
+  background-image: url(/assets/images/Audio.jpg);
   background-size: cover;
   width: 50%;
   margin-left: auto; 
@@ -86,7 +86,7 @@ li.dropdown{
   width: 200px;
 }
 .Comment-Section{
-  background-color: bisque;
+  background-color: navajowhite;
   width: 250px;
   bottom: 0;
 }
